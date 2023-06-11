@@ -28,7 +28,7 @@ int main()
   k = recvfrom(sock_desc,buffer,100,0,(struct sockaddr*)&server,&server_len);
   if(k == -1)
     printf("Error in recvfrom()!");
-  printf("Datagram got from server is %s",buffer);
+  printf("Datagram got from client is %s",buffer);
   
   return 0;
 }
